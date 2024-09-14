@@ -9,8 +9,8 @@ public class Customer {
 
     public Customer(int arrivalTime) {
         this.arrivalTime = arrivalTime;
-        System.out.println(this.arrivalTime);
-        this.serviceTime = 6 + random.nextInt(10); // 6 to 15 seconds
+        // System.out.println(this.arrivalTime);
+        this.serviceTime = 30 + random.nextInt(10); // 6 to 15 seconds
         this.served = false;
         this.left = false;
     }
@@ -21,21 +21,5 @@ public class Customer {
 
     public int getServiceTime() {
         return serviceTime;
-    }
-
-    public void setServed(boolean served) {
-        this.served = served;
-    }
-
-    public void setLeft(boolean left) {
-        this.left = left;
-    }
-
-    public boolean isServed() {
-        return served;
-    }
-
-    public boolean isLeft() {
-        return left;
     }
 }
